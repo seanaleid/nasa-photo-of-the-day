@@ -31,3 +31,39 @@
     transform: rotate(360deg);
   }
 }
+
+
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+
+}
+
+.entry{
+  width: 100%;
+  
+}
+
+.nasa-card{
+  width: 100%;
+}
+
+.nasa-pic{
+  width: 400px;
+  height: 400px;
+  object-fit: scale;
+  flex-shrink: 2;
+  border: 1px solid red;
+}
+
+.nasa-header{
+  font-size: 2rem;
+}
+
+.nasa-p{
+  font-size: 2rem;
+}
+
