@@ -4,7 +4,7 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -34,9 +34,12 @@
 
 
 .container{
-  max-width: 800px;
+  width: 800px;
+  padding-left: 5%;
+  padding-right: 5%;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  background-color: lightgrey;
   display: flex;
   justify-content: center;
 
@@ -56,7 +59,7 @@
   height: 400px;
   object-fit: scale;
   flex-shrink: 2;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .nasa-header{
@@ -67,3 +70,23 @@
   font-size: 2rem;
 }
 
+.navBar{
+  width: 100%;
+  background-color: silver;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks{
+  color: white;
+  background-color: #184379;
+  font-size: .8rem;
+  border: none;
+  margin: 1%;
+  padding: 2%;
+  display: flex;
+  border-radius: 70%;
+  
+
+}
