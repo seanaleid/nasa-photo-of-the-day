@@ -34,17 +34,17 @@
 }
 
 
-.container{
+/* .container{
   width: 800px;
   padding-left: 5%;
   padding-right: 5%;
   margin: 0 auto;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   background-color: lightgrey;
   display: flex;
   justify-content: center;
 
-}
+} */
 
 .entry{
   width: 100%;
@@ -71,13 +71,13 @@
   font-size: 2rem;
 }
 
-.navBar{
+/* .navBar{
   width: 100%;
   background-color: silver;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .nav-right{
   width: 100%;

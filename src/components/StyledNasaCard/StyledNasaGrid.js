@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import StyledNasaCard from "./StyledNasaCard";
 import axios from "axios";
+import NasaButton from "../StyledButton";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -16,21 +17,6 @@ justify-content: ${props => (props.primary ? 'center' : 'space-evenly')};
 align-items: center;
 `;
 
-
-const NasaButton = styled.button`
-width: 200px;
-height: 80px;
-// border: 1px solid red; 
-background-color: #fff;
-border-radius:15%;
-display: flex;
-justify-content: center;
-font-size: 2rem;
-&:hover{
-    background-color: #315a73;
-    color: #fff
-}
-`;
 
 
 export default function StyledNasaGrid() {
@@ -61,9 +47,9 @@ export default function StyledNasaGrid() {
                 copyright={pics.copyright}/>
             </div>
             <Container>
-                <NasaButton>See More</NasaButton>
-                <NasaButton>Sign Up!</NasaButton>
-                <NasaButton>Log In!</NasaButton>
+                <NasaButton primary>See More</NasaButton>
+                <NasaButton primary>Sign Up!</NasaButton>
+                <NasaButton primary>Log In!</NasaButton>
             </Container>
         </Container>
     );
