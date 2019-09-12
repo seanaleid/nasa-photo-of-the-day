@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavCard from "./NavCard";
-import { navigation } from "../../src/data";
+import { navigation } from "../../data";
 
 const NavBar = () =>{
     const [navigationState] = useState(navigation);
