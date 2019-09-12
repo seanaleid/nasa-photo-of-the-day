@@ -6,6 +6,7 @@
   animation: App-logo-spin infinite 20s linear;
   height: 10vmin;
   pointer-events: none;
+  
 }
 
 .App-header {
@@ -76,6 +77,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-right{
+  width: 100%;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 600px;
 }
 
 .navLinks{
