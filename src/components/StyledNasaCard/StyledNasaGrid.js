@@ -1,13 +1,44 @@
 import React, {useState, useEffect} from "react";
 import StyledNasaCard from "./StyledNasaCard";
 import axios from "axios";
+import styled from "styled-components";
+
+const Container = styled.div`
+width: 800px;
+padding-left: 5%;
+padding-right: 5%;
+margin: ${props => (props.primary ? '0 auto' : 'null')};
+// border: 1px solid red; 
+background-color: ${props => (props.primary ? 'lightgrey' : '##ffffff')};
+display: flex;
+flex-direction: ${props => (props.primary ? 'column' : 'row')};
+justify-content: ${props => (props.primary ? 'center' : 'space-evenly')};
+align-items: center;
+`;
+
+
+const NasaButton = styled.button`
+width: 200px;
+height: 80px;
+// border: 1px solid red; 
+background-color: #fff;
+border-radius:15%;
+display: flex;
+justify-content: center;
+font-size: 2rem;
+&:hover{
+    background-color: #315a73;
+    color: #fff
+}
+`;
+
 
 export default function StyledNasaGrid() {
     const [pics, setPics] = useState({});
     // console.log(NasaCard);
 
     useEffect(() =>{
-        axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=cyV30cBi4Fp4orZofYJXdd520ulmG3idrClBlyl1`)
         //comment to not get rate limited
             .then(response =>{
                 console.log("Nasa API data", response);
@@ -21,7 +52,7 @@ export default function StyledNasaGrid() {
     }, []);
     
     return (
-        <div className="container">
+        <Container primary>
             <div className="entry">
                 <StyledNasaCard 
                 title={pics.title} 
@@ -29,7 +60,12 @@ export default function StyledNasaGrid() {
                 explanation={pics.explanation} 
                 copyright={pics.copyright}/>
             </div>
-        </div>
+            <Container>
+                <NasaButton>See More</NasaButton>
+                <NasaButton>Sign Up!</NasaButton>
+                <NasaButton>Log In!</NasaButton>
+            </Container>
+        </Container>
     );
 };
 

@@ -7,7 +7,7 @@ export default function NasaGrid() {
     // console.log(NasaCard);
 
     useEffect(() =>{
-        axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=cyV30cBi4Fp4orZofYJXdd520ulmG3idrClBlyl1`)
         //comment to not get rate limited
             .then(response =>{
                 console.log("Nasa API data", response);

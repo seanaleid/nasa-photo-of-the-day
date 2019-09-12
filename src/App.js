@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import NasaGrid from "./components/OriginalNasaCard/NasaGrid";
+// import NasaGrid from "./components/OriginalNasaCard/NasaGrid";
 import NavGrid from "./components/OriginalNavCard/NavGrid";
 import StyledNasaGrid from "./components/StyledNasaCard/StyledNasaGrid";
 import StyledNavGrid from "./components/StyledNav/StyledNavGrid";
@@ -11,7 +11,7 @@ function App() {
       <NavGrid />
       <StyledNavGrid />
       
-      <NasaGrid />
+      {/* <NasaGrid /> */}
       <StyledNasaGrid />
     </div>
   );
